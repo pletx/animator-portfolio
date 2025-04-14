@@ -38,6 +38,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -111,7 +112,6 @@ video {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;
 }
 
 /* Conteneur plein écran */
@@ -158,88 +158,68 @@ video {
 }
 
 /* Carousel */
-.carousel-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-/* Styles pour le conteneur du carrousel */
 .carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    border: 2px solid #35424a;
-    border-radius: 15px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Nécessaire pour positionner les flèches */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-/* Styles pour le carrousel */
 .carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    scroll-behavior: smooth;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1000px;
+    border: 2px solid #35424a;
+    border-radius: 8px;
+    position: relative;
 }
 
-/* Styles pour les images */
 .carousel img {
     width: 100%;
+    height: auto;
     flex-shrink: 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.carousel img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Styles pour les flèches */
 .carousel-arrow {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #35424a;
     color: white;
     border: none;
     padding: 10px;
-    font-size: 24px;
     cursor: pointer;
+    font-size: 1.5rem;
     border-radius: 50%;
-    z-index: 10;
     transition: background-color 0.3s ease;
+    z-index: 10;
 }
 
+
 .carousel-arrow.left-arrow {
-    left: 10px;
+    left: -40px; /* Position à gauche */
 }
 
 .carousel-arrow.right-arrow {
-    right: 10px;
+    right: -40px; /* Position à droite */
 }
 
 .carousel-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #1f2a30;
 }
 
 /* Section GIFs */
 .gif-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
     justify-content: center;
     margin: 20px 0;
 }
 
 .gif-container img {
-    width: 500px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -254,12 +234,12 @@ video {
 /* Styles pour les liens de téléchargement */
 .download-links {
     text-align: center;
-    margin-top: 10px;
+    margin: 20px 0;
 }
 
-.download-button {
+.download-links a {
     display: inline-block;
-    margin: 5px;
+    margin: 10px;
     padding: 10px 20px;
     background-color: #35424a;
     color: white;
@@ -268,7 +248,7 @@ video {
     transition: background-color 0.3s ease;
 }
 
-.download-button:hover {
+.download-links a:hover {
     background-color: #1f2a30;
 }
 
@@ -473,8 +453,8 @@ social-links a:hover {
 
 .social-links a {
     display: inline-flex;
-  justify-content: center;
-    color: #c7c7c7;
+    align-items: center;
+    color: white;
     font-size: 1.2rem;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -484,13 +464,14 @@ social-links a:hover {
     margin-right: 8px;
 }
 
-.social-links a:hover {
+social-links a:hover {
     color: #f4a261;
 }
 
 /* Section Demo Reel */
 #demo-reel {
     text-align: center;
+    padding: 40px 20px;
     background-color: #f4f4f4;
 }
 
@@ -512,5 +493,125 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #1f2a30;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button i {
+    margin-right: 10px;
+}
+
+.contact-button:hover {
+    background-color: #0d1a20;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+social-links a i {
+    margin-right: 8px;
+}
+
+social-links a:hover {
+    color: #f4a261;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-arrow.left-arrow {
+        left: 10px; /* Ajustement pour les petits écrans */
+    }
+
+    .carousel-arrow.right-arrow {
+        right: 10px; /* Ajustement pour les petits écrans */
+    }
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: rgb(50, 43, 43);
+        border: none;
+        padding: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 10;
+        transition: background-color 0.3s ease;
+    }
+
+    .download-links a {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .gif-container {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-arrow {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .carousel-arrow.left-arrow {
+        left: 5px; /* Ajustement pour les très petits écrans */
+    }
+
+    .carousel-arrow.right-arrow {
+        right: 5px; /* Ajustement pour les très petits écrans */
+    }
+
+    .contact-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+    }
 }
