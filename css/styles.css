@@ -313,12 +313,12 @@ video {
 .social-links a {
     margin: 0 10px;
     text-decoration: none;
-    color: #c7cfd3;
+    color: #704fa1;
     font-weight: bold;
 }
 
 social-links a:hover {
-    color: #bbb;
+    color: #560000;
 }
 
 /* Modal pour les GIFs */
@@ -484,28 +484,6 @@ social-links a:hover {
     background-color: #1f2a30;
 }
 
-.social-links {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.social-links a {
-    display: inline-flex;
-    align-items: center;
-    color: white;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.social-links a i {
-    margin-right: 8px;
-}
-
-social-links a:hover {
-    color: #f4a261;
-}
 
 /* Section Demo Reel */
 #demo-reel {
@@ -570,18 +548,18 @@ footer {
 .social-links a {
     display: inline-flex;
     align-items: center;
-    color: white;
+    color: rgb(112, 112, 112);
     font-size: 1.2rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-social-links a i {
+.social-links a i {
     margin-right: 8px;
 }
 
-social-links a:hover {
-    color: #f4a261;
+.social-links a:hover {
+    color: #f46161;
 }
 
 /* Responsive Design */
