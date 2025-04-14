@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plet Animation Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="animation.html">Animations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction">
+        <div class="intro-container">
+            <div class="intro-photo">
+                <img src="/assets/pp.jpg" alt="Photo Plet">
+            </div>
+            <div class="intro-text">
+                <h2>Introduction</h2>
+                <p>
+                    <img src="https://flagcdn.com/w40/fr.png" alt="French Flag" class="flag-icon"> 
+                    Bonjour, je m'appelle Eddy Tougon, alias Plet. Je suis un jeune animateur 2D freelance passionné par la fiction et l'art.
+                    Cela fait plusieurs années que j'apprends l'animation afin de devenir le meilleur animateur possible.
+                    Bienvenue sur mon tout premier portfolio, conçu entièrement par mes soins !
+                </p>
+
+                <p>
+                    <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="flag-icon"> 
+                    Hello, my name is Eddy Tougon, also known as Plet. I'm a young freelance 2D animator with a passion for fiction and art.
+                    I've been learning animation for several years now with the goal of becoming the best animator I can be.
+                    Welcome to my very first portfolio, entirely self-made!
+                </p>
+            </div>
+        </div>
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p><img src="https://flagcdn.com/w40/fr.png" alt="French Flag" class="flag-icon"> 
+                .   Je suis devenue animateur pour réaliser un rêve d’enfance :
+                 donner vie à des histoires avec le dessin. Pour concrétiser ce rêve, 
+                 j’ai décidé d’apprendre l’animation 2D, une discipline qui a fini par me passionner.
+                  Cela fait maintenant trois ans que je me forme,
+                 développe mes compétences afin de devenir meilleur chaque jour.</p>
+            <p> <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="flag-icon">
+                .   I became an animator to fulfill a childhood dream: bringing stories to life through drawing.
+                 To make this dream come true, I decided to learn 2D animation—a discipline that eventually became a true passion.
+                  It’s been three years now since I started training,
+                   constantly developing my skills and striving to become better every day.</p>
+            <div class="video-container">
+            </div>
+        </div>
+    </section>
+
+    <section id="demo-reel">
+        <h2>Demo Reel</h2>
+        <div class="video-container">
+            <video width="100%" height="315" controls>
+                <source src="/assets/demo reel plet.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <div id="gif-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="gif-fullscreen">
+    </div>
+
+    <div id="mail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-paper-plane"></i> Send an Email</h2>
+            <form id="contact-form">
+                <label for="name"><i class="fas fa-user"></i> Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message"><i class="fas fa-comment"></i> Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="send-button"><i class="fas fa-paper-plane"></i> Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <a href="mailto:eddytougon@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Plet,%0D%0A%0D%0A" 
+               class="contact-button">
+                <i class="fas fa-envelope"></i> Send an Email
+            </a>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@plet_animation" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://www.tiktok.com/@plet_animation" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://x.com/pletx2" target="_blank" aria-label="X (Twitter)">
+                    <i class="fab fa-twitter"></i> X
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2025 Animator Portfolio. All rights reserved.</p>
+    </footer>
+</html>

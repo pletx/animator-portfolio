@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations - Plet Animation Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Plet Animation Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="animation.html">Animations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gifs">
+        <h2>Animations</h2>
+        <div class="gif-container">
+            <img src="/assets/1er genga.gif" alt="GIF Animation 1">
+            <img src="/assets/genga camera 2.gif" alt="GIF Animation 2">
+            <img src="/assets/gengafx2.gif" alt="GIF Animation 3">
+            <img src="/assets/Gengadecor.gif" alt="GIF Animation 4">
+            <img src="/assets/cape animation.gif" alt="GIF Animation 5">
+            <img src="/assets/Scene 1 cut 4.gif" alt="GIF Animation 6">
+            <img src="/assets/sort.gif" alt="GIF Animation 7">
+            <img src="/assets/genga-fx.gif" alt="GIF Animation 8">
+        </div>
+    </section>
+
+    <!-- Modal pour l'affichage en plein écran des GIFs -->
+    <div id="gif-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="gif-fullscreen" alt="GIF en plein écran">
+    </div>
+
+    <section id="carousel">
+        <h2>Flipbook</h2>
+        <div class="carousel-container">
+            <button class="carousel-arrow left-arrow" onclick="moveCarousel('image-carousel-1', -1)">&#10094;</button>
+            <div class="carousel" id="image-carousel-1">
+                <!-- Les images seront ajoutées dynamiquement -->
+            </div>
+            <button class="carousel-arrow right-arrow" onclick="moveCarousel('image-carousel-1', 1)">&#10095;</button>
+        </div>
+        <div class="download-links">
+            <a href="/assets/timesheet genga decor.jpg" download class="download-button">Timesheet</a>
+            <a href="/assets/decor folder.zip" download class="download-button">Complete file</a>
+        </div>
+
+        <h2>Flipbook 2</h2>
+        <div class="carousel-container">
+            <button class="carousel-arrow left-arrow" onclick="moveCarousel('image-carousel-2', -1)">&#10094;</button>
+            <div class="carousel" id="image-carousel-2">
+                <!-- Les images seront ajoutées dynamiquement -->
+            </div>
+            <button class="carousel-arrow right-arrow" onclick="moveCarousel('image-carousel-2', 1)">&#10095;</button>
+        </div>
+        <div class="download-links">
+            <a href="/assets/LO fx timesheet.jpg" download class="download-button">Timesheet</a>
+            <a href="/assets/lo fx.zip" download class="download-button">Complete file</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <a href="mailto:eddytougon@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Plet,%0D%0A%0D%0A" 
+               class="contact-button">
+                <i class="fas fa-envelope"></i> Send an Email
+            </a>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@plet_animation" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://www.tiktok.com/@plet_animation" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://x.com/pletx2" target="_blank" aria-label="X (Twitter)">
+                    <i class="fab fa-twitter"></i> X
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2025 Animator Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
