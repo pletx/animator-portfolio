@@ -1,4 +1,4 @@
-let currentIndexes = { 'image-carousel-1': 0, 'image-carousel-2': 0 }; // Index pour chaque carrousel
+let currentIndexes = { 'image-carousel-1': 0, 'image-carousel-2': 0, 'image-carousel-3': 0 }; // Ajout de l'index pour le troisième carousel
 
 function loadCarouselImages() {
     const carousels = {
@@ -15,6 +15,8 @@ function loadCarouselImages() {
             '/assets/decor flipbook/タイムライン1_0016.jpg',
             '/assets/decor flipbook/タイムライン1_0021.jpg',
             '/assets/decor flipbook/タイムライン1_0021.jpg',
+            '/assets/decor flipbook/タイムライン1_0023.jpg',
+            '/assets/decor flipbook/タイムライン1_0023.jpg',
             '/assets/decor flipbook/タイムライン1_0025.jpg',
             '/assets/decor flipbook/タイムライン1_0025.jpg',
         ],
@@ -92,6 +94,67 @@ function loadCarouselImages() {
             '/assets/lo fx/タイムライン1_0069.jpg','/assets/lo fx/タイムライン1_0069.jpg',
             '/assets/lo fx/タイムライン1_0070.jpg','/assets/lo fx/タイムライン1_0070.jpg',
             '/assets/lo fx/タイムライン1_0071.jpg','/assets/lo fx/タイムライン1_0071.jpg',
+        ],'image-carousel-3': [
+            '/assets/genga rika/Chronologie 1_0000.bmp','/assets/genga rika/Chronologie 1_0000.bmp',
+            '/assets/genga rika/Chronologie 1_0001.bmp','/assets/genga rika/Chronologie 1_0001.bmp',
+            '/assets/genga rika/Chronologie 1_0002.bmp','/assets/genga rika/Chronologie 1_0002.bmp',
+            '/assets/genga rika/Chronologie 1_0003.bmp','/assets/genga rika/Chronologie 1_0003.bmp',
+            '/assets/genga rika/Chronologie 1_0004.bmp','/assets/genga rika/Chronologie 1_0004.bmp',
+            '/assets/genga rika/Chronologie 1_0005.bmp','/assets/genga rika/Chronologie 1_0005.bmp',
+            '/assets/genga rika/Chronologie 1_0006.bmp','/assets/genga rika/Chronologie 1_0006.bmp',
+            '/assets/genga rika/Chronologie 1_0007.bmp','/assets/genga rika/Chronologie 1_0007.bmp',
+            '/assets/genga rika/Chronologie 1_0008.bmp','/assets/genga rika/Chronologie 1_0008.bmp',
+            '/assets/genga rika/Chronologie 1_0009.bmp','/assets/genga rika/Chronologie 1_0009.bmp',
+            '/assets/genga rika/Chronologie 1_0010.bmp','/assets/genga rika/Chronologie 1_0010.bmp',
+            '/assets/genga rika/Chronologie 1_0011.bmp','/assets/genga rika/Chronologie 1_0011.bmp',
+            '/assets/genga rika/Chronologie 1_0012.bmp','/assets/genga rika/Chronologie 1_0012.bmp',
+            '/assets/genga rika/Chronologie 1_0013.bmp','/assets/genga rika/Chronologie 1_0013.bmp',
+            '/assets/genga rika/Chronologie 1_0014.bmp','/assets/genga rika/Chronologie 1_0014.bmp',
+            '/assets/genga rika/Chronologie 1_0015.bmp','/assets/genga rika/Chronologie 1_0015.bmp',
+            '/assets/genga rika/Chronologie 1_0016.bmp','/assets/genga rika/Chronologie 1_0016.bmp',
+            '/assets/genga rika/Chronologie 1_0017.bmp','/assets/genga rika/Chronologie 1_0017.bmp',
+            '/assets/genga rika/Chronologie 1_0018.bmp','/assets/genga rika/Chronologie 1_0018.bmp',
+            '/assets/genga rika/Chronologie 1_0019.bmp','/assets/genga rika/Chronologie 1_0019.bmp',
+            '/assets/genga rika/Chronologie 1_0020.bmp','/assets/genga rika/Chronologie 1_0020.bmp',
+            '/assets/genga rika/Chronologie 1_0021.bmp','/assets/genga rika/Chronologie 1_0021.bmp',
+            '/assets/genga rika/Chronologie 1_0022.bmp','/assets/genga rika/Chronologie 1_0022.bmp',
+            '/assets/genga rika/Chronologie 1_0023.bmp','/assets/genga rika/Chronologie 1_0023.bmp',
+            '/assets/genga rika/Chronologie 1_0024.bmp','/assets/genga rika/Chronologie 1_0024.bmp',
+            '/assets/genga rika/Chronologie 1_0025.bmp','/assets/genga rika/Chronologie 1_0025.bmp',
+            '/assets/genga rika/Chronologie 1_0026.bmp','/assets/genga rika/Chronologie 1_0026.bmp',
+            '/assets/genga rika/Chronologie 1_0027.bmp','/assets/genga rika/Chronologie 1_0027.bmp',
+            '/assets/genga rika/Chronologie 1_0028.bmp','/assets/genga rika/Chronologie 1_0028.bmp',
+            '/assets/genga rika/Chronologie 1_0029.bmp','/assets/genga rika/Chronologie 1_0029.bmp',
+            '/assets/genga rika/Chronologie 1_0030.bmp','/assets/genga rika/Chronologie 1_0030.bmp',
+            '/assets/genga rika/Chronologie 1_0031.bmp','/assets/genga rika/Chronologie 1_0031.bmp',
+            '/assets/genga rika/Chronologie 1_0032.bmp','/assets/genga rika/Chronologie 1_0032.bmp',
+            '/assets/genga rika/Chronologie 1_0033.bmp','/assets/genga rika/Chronologie 1_0033.bmp',
+            '/assets/genga rika/Chronologie 1_0034.bmp','/assets/genga rika/Chronologie 1_0034.bmp',
+            '/assets/genga rika/Chronologie 1_0035.bmp','/assets/genga rika/Chronologie 1_0035.bmp',
+            '/assets/genga rika/Chronologie 1_0036.bmp','/assets/genga rika/Chronologie 1_0036.bmp',
+            '/assets/genga rika/Chronologie 1_0037.bmp','/assets/genga rika/Chronologie 1_0037.bmp',
+            '/assets/genga rika/Chronologie 1_0038.bmp','/assets/genga rika/Chronologie 1_0038.bmp',
+            '/assets/genga rika/Chronologie 1_0039.bmp','/assets/genga rika/Chronologie 1_0039.bmp',
+            '/assets/genga rika/Chronologie 1_0040.bmp','/assets/genga rika/Chronologie 1_0040.bmp',
+            '/assets/genga rika/Chronologie 1_0041.bmp','/assets/genga rika/Chronologie 1_0041.bmp',
+            '/assets/genga rika/Chronologie 1_0042.bmp','/assets/genga rika/Chronologie 1_0042.bmp',
+            '/assets/genga rika/Chronologie 1_0043.bmp','/assets/genga rika/Chronologie 1_0043.bmp',
+            '/assets/genga rika/Chronologie 1_0044.bmp','/assets/genga rika/Chronologie 1_0044.bmp',
+            '/assets/genga rika/Chronologie 1_0045.bmp','/assets/genga rika/Chronologie 1_0045.bmp',
+            '/assets/genga rika/Chronologie 1_0046.bmp','/assets/genga rika/Chronologie 1_0046.bmp',
+            '/assets/genga rika/Chronologie 1_0047.bmp','/assets/genga rika/Chronologie 1_0047.bmp',
+            '/assets/genga rika/Chronologie 1_0048.bmp','/assets/genga rika/Chronologie 1_0048.bmp',
+            '/assets/genga rika/Chronologie 1_0049.bmp','/assets/genga rika/Chronologie 1_0049.bmp',
+            '/assets/genga rika/Chronologie 1_0050.bmp','/assets/genga rika/Chronologie 1_0050.bmp',
+            '/assets/genga rika/Chronologie 1_0051.bmp','/assets/genga rika/Chronologie 1_0051.bmp',
+            '/assets/genga rika/Chronologie 1_0052.bmp','/assets/genga rika/Chronologie 1_0052.bmp',
+            '/assets/genga rika/Chronologie 1_0053.bmp','/assets/genga rika/Chronologie 1_0053.bmp',
+            '/assets/genga rika/Chronologie 1_0054.bmp','/assets/genga rika/Chronologie 1_0054.bmp',
+            '/assets/genga rika/Chronologie 1_0055.bmp','/assets/genga rika/Chronologie 1_0055.bmp',
+            '/assets/genga rika/Chronologie 1_0056.bmp','/assets/genga rika/Chronologie 1_0056.bmp',
+            '/assets/genga rika/Chronologie 1_0057.bmp','/assets/genga rika/Chronologie 1_0057.bmp',
+            '/assets/genga rika/Chronologie 1_0058.bmp','/assets/genga rika/Chronologie 1_0058.bmp',
+            '/assets/genga rika/Chronologie 1_0059.bmp','/assets/genga rika/Chronologie 1_0059.bmp',
         ]
     };
 
@@ -101,8 +164,7 @@ function loadCarouselImages() {
         images.forEach((src, index) => {
             const img = document.createElement('img');
             img.src = src;
-            img.alt = `Carousel Image ${index + 1
-            }`;
+            img.alt = `Carousel Image ${index + 1}`;
             img.style.display = index === 0 ? 'block' : 'none'; // Affiche uniquement la première image
             carousel.appendChild(img);
         });

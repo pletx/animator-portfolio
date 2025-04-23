@@ -504,6 +504,53 @@ social-links a:hover {
     color: #555;
 }
 
+/* Section Logiciels */
+#software {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+#software h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #35424a;
+}
+
+#software p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.software-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.software-item {
+    text-align: center;
+    max-width: 150px;
+}
+
+.software-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.software-item img:hover {
+    transform: scale(1.1);
+}
+
+.software-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
 /* Footer styles */
 footer {
     background-color: #35424a;
