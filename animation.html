@@ -1,113 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animations - Plet Animation Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Animations | Plet Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body class="japanime-style">
     <header>
-        <h1>Plet Animation Portfolio</h1>
         <nav>
+            <div class="logo">PLET<span>ANIMATION</span></div>
             <ul>
-                <li><a href="index.html">Introduction</a></li>
-                <li><a href="animation.html">Animations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="animation.html" class="active">WORKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="gifs">
-        <h2>Animations</h2>
-        <div class="gif-container"> 
-            <img src="./assets/RUN.gif" alt="GIF Animation 7">
-            <img src="./assets/cut slide.gif" alt="GIF Animation 13">
-            <img src="./assets/cut course cub.gif" alt="GIF Animation 1">
-             <img src="./assets/1er genga.gif" alt="GIF Animation 3">
-            <img src="./assets/cut final collab.gif" alt="GIF Animation 2">
-            <img src="./assets/folie.gif" alt="GIF Animation 4">
-            <img src="./assets/rika.gif" alt="GIF Animation 5">
-            <img src="./assets/cut mage clap.gif" alt="GIF Animation 12">
-            <img src="./assets/cut pieux.gif" alt="GIF Animation 0">
-            <img src="./assets/Gengadecor.gif" alt="GIF Animation 8">
-            <img src="./assets/cape animation.gif" alt="GIF Animation 9">
-            <img src="./assets/Scene 1 cut 4.gif" alt="GIF Animation 10">
-            <img src="./assets/sort.gif" alt="GIF Animation 11">
-            
-            
-        </div>
-    </section>
 
-    <!-- Modal pour l'affichage en plein écran des GIFs -->
+    <main>
+        <section id="sakuga-gallery">
+            <div class="section-title">
+                <h3>ANIMATION ARCHIVES</h3>
+
+            <div class="gif-grid">
+                <div class="gif-item"><img src="./assets/RUN.gif" alt="Run Cycle"><div class="gif-label">CUT #07 - RUN CYCLE</div></div>
+                <div class="gif-item"><img src="./assets/cut slide.gif" alt="Slide"><div class="gif-label">CUT #13 - SLIDE</div></div>
+                <div class="gif-item"><img src="./assets/cut course cub.gif" alt="Action Cub"><div class="gif-label">CUT #01 -Run ACTION</div></div>
+                <div class="gif-item"><img src="./assets/1er genga.gif" alt="Genga"><div class="gif-label">LAYOUTLAYOUT #03 -Yuta</div></div>
+                <div class="gif-item"><img src="./assets/cut final collab.gif" alt="Collab"><div class="gif-label">CUT #02 - COLLAB</div></div>
+                <div class="gif-item"><img src="./assets/folie.gif" alt="FX"><div class="gif-label">CUT #04 - LAYOUT</div></div>
+                <div class="gif-item"><img src="./assets/rika.gif" alt="Acting"><div class="gif-label">CUT #05 - RIKA</div></div>
+                <div class="gif-item"><img src="./assets/cut mage clap.gif" alt="Mage"><div class="gif-label">CUT #12 - MAGE CLAP</div></div>
+                <div class="gif-item"><img src="./assets/cut pieux.gif" alt="Action"><div class="gif-label">CUT #00 - ACTION</div></div>
+                <div class="gif-item"><img src="./assets/Gengadecor.gif" alt="Layout"><div class="gif-label">CUT #08 - LAYOUT/BG</div></div>
+                <div class="gif-item"><img src="./assets/cape animation.gif" alt="Cloth"><div class="gif-label">CUT #09 - CLOTH test</div></div>
+                <div class="gif-item"><img src="./assets/Scene 1 cut 4.gif" alt="Scene 1"><div class="gif-label">CUT #10 - FX BEAM</div></div>
+                <div class="gif-item"><img src="./assets/sort.gif" alt="Magic"><div class="gif-label">CUT #11 - MAGIC</div></div>
+            </div>
+        </section>
+
+        <section id="flipbooks">
+            <div class="section-title">
+                <h3>PRODUCTION MATERIAL</h3>
+                <span class="jp-title">制作資料</span>
+            </div>
+
+            <div class="production-card">
+                <div class="production-header">
+                    <h4>#01 - Run Cycle Process</h4>
+                    <div class="lang-tags">
+                        <span><img src="https://flagcdn.com/w20/fr.png" class="mini-flag"> Layout & Genga</span>
+                    </div>
+                </div>
+                
+                <div class="carousel-external-wrapper">
+                    <button class="carousel-arrow outside left-arrow" onclick="moveCarousel('image-carousel-1', -1)">&#10094;</button>
+                    <div class="carousel-viewport">
+                        <div class="carousel" id="image-carousel-1"></div>
+                    </div>
+                    <button class="carousel-arrow outside right-arrow" onclick="moveCarousel('image-carousel-1', 1)">&#10095;</button>
+                </div>
+
+                <div class="download-area">
+                    <a href="./assets/time sheet run.jpg" download class="btn-download"><i class="fas fa-file-image"></i> Timesheet (JPG)</a>
+                    <a href="./assets/Layout run.rar" download class="btn-download primary"><i class="fas fa-box-archive"></i> Complete Layout (.RAR)</a>
+                </div>
+            </div>
+
+            <div class="production-card">
+                <div class="production-header">
+                    <h4>#02 - Rika Acting</h4>
+                    <div class="lang-tags">
+                        <span><img src="https://flagcdn.com/w20/gb.png" class="mini-flag"> Genga Flipbook</span>
+                    </div>
+                </div>
+                
+                <div class="carousel-external-wrapper">
+                    <button class="carousel-arrow outside left-arrow" onclick="moveCarousel('image-carousel-2', -1)">&#10094;</button>
+                    <div class="carousel-viewport">
+                        <div class="carousel" id="image-carousel-2"></div>
+                    </div>
+                    <button class="carousel-arrow outside right-arrow" onclick="moveCarousel('image-carousel-2', 1)">&#10095;</button>
+                </div>
+
+                <div class="download-area">
+                    <a href="./assets/timesheet genga rika.jpg" download class="btn-download"><i class="fas fa-file-image"></i> Timesheet (JPG)</a>
+                    <a href="./assets/layout rika.zip" download class="btn-download primary"><i class="fas fa-box-archive"></i> Complete Layout (.ZIP)</a>
+                </div>
+            </div>
+
+            <div class="production-card">
+                <div class="production-header">
+                    <h4>#03 - Background & Decor</h4>
+                </div>
+                
+                <div class="carousel-external-wrapper">
+                    <button class="carousel-arrow outside left-arrow" onclick="moveCarousel('image-carousel-3', -1)">&#10094;</button>
+                    <div class="carousel-viewport">
+                        <div class="carousel" id="image-carousel-3"></div>
+                    </div>
+                    <button class="carousel-arrow outside right-arrow" onclick="moveCarousel('image-carousel-3', 1)">&#10095;</button>
+                </div>
+
+                <div class="download-area">
+                    <a href="./assets/timesheet genga decor.jpg" download class="btn-download"><i class="fas fa-file-image"></i> Timesheet (JPG)</a>
+                    <a href="./assets/genga decor.zip" download class="btn-download primary"><i class="fas fa-box-archive"></i> Complete Layout (.ZIP)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <div id="gif-modal" class="modal">
         <span class="close">&times;</span>
-        <img id="gif-fullscreen" class="modal-content" alt="GIF en plein écran">
+        <img id="gif-fullscreen" class="modal-content">
     </div>
-
-    <section id="carousel">
-        <h2>Flipbook</h2>
-        <div class="carousel-container">
-            <button class="carousel-arrow left-arrow" onclick="moveCarousel('image-carousel-1', -1)">&#10094;</button>
-            <div class="carousel" id="image-carousel-1">
-                <!-- Les images seront ajoutées dynamiquement -->
-            </div>
-            <button class="carousel-arrow right-arrow" onclick="moveCarousel('image-carousel-1', 1)">&#10095;</button>
-        </div>
-        <div class="download-links">
-            <a href="./assets/time sheet run.jpg" download class="download-button">Timesheet</a>
-            <a href="./assets/Layout run.rar" download class="download-button">Complete file</a>
-        </div>
-
-        <h2>Flipbook 2</h2>
-        <div class="carousel-container">
-            <button class="carousel-arrow left-arrow" onclick="moveCarousel('image-carousel-2', -1)">&#10094;</button>
-            <div class="carousel" id="image-carousel-2">
-                <!-- Les images seront ajoutées dynamiquement -->
-            </div>
-            <button class="carousel-arrow right-arrow" onclick="moveCarousel('image-carousel-2', 1)">&#10095;</button>
-        </div>
-        <div class="download-links">
-            <a href="./assets/timesheet genga rika.jpg" download class="download-button">Timesheet</a>
-            <a href="./assets/layout rika.zip" download class="download-button">Complete file</a>
-        </div>
-
-        <h2>Flipbook 3</h2>
-        <div class="carousel-container">
-            <button class="carousel-arrow left-arrow" onclick="moveCarousel('image-carousel-3', -1)">&#10094;</button>
-            <div class="carousel" id="image-carousel-3">
-                <!-- Les images seront ajoutées dynamiquement -->
-            </div>
-            <button class="carousel-arrow right-arrow" onclick="moveCarousel('image-carousel-3', 1)">&#10095;</button>
-        </div>
-        <div class="download-links">
-            <a href="./assets/timesheet genga decor.jpg" download class="download-button">Timesheet</a>
-            <a href="./assets/genga decor.zip" download class="download-button">Complete file</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <a href="mailto:eddytougon@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Plet,%0D%0A%0D%0A" 
-               class="contact-button">
-                <i class="fas fa-envelope"></i> Send an Email
-            </a>
-            <div class="social-links">
-                <a href="https://www.youtube.com/@plet_animation" target="_blank" aria-label="YouTube">
-                    <i class="fab fa-youtube"></i> YouTube
-                </a>
-                <a href="https://www.tiktok.com/@plet_animation" target="_blank" aria-label="TikTok">
-                    <i class="fab fa-tiktok"></i> TikTok
-                </a>
-                <a href="https://x.com/pletx2" target="_blank" aria-label="X (Twitter)">
-                    <i class="fab fa-twitter"></i> X
-                </a>
-            </div>
-        </div>
-        <p>&copy; 2025 Plet Animator  Portfolio. All rights reserved.</p>
-    </footer>
 
     <script src="js/scripts.js"></script>
 </body>

@@ -1,0 +1,104 @@
+/* VARIABLES JAPANIME PRODUCTION */
+:root {
+    --bg-black: #0a0a0b;
+    --card-gray: #141417;
+    --neon-blue: #00d4ff;
+    --text-gray: #a0a0a5;
+    --white: #ffffff;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--white);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* HEADER FIXE */
+header {
+    background-color: rgba(10, 10, 11, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999; /* Toujours au-dessus */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--neon-blue);
+    margin-left: 5px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--neon-blue);
+}
+
+/* FOOTER */
+footer {
+    padding: 60px 10%;
+    background-color: #050506;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.footer-wrap p {
+    color: var(--text-gray);
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.socials a {
+    color: var(--white);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.socials a:hover {
+    color: var(--neon-blue);
+    transform: translateY(-3px);
+}

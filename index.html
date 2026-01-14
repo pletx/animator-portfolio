@@ -3,117 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plet Animation Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Plet Animation | 2D Animator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Ajout de styles pour l'intégration YouTube responsive */
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* Ratio 16:9 */
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            background: #000;
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        .flag-icon { width: 20px; vertical-align: middle; margin-right: 8px; border-radius: 2px; }
-        #demo-reel { padding: 50px 20px; max-width: 900px; margin: 0 auto; }
-    </style>
 </head>
-<body>
+<body class="japanime-style">
     <header>
         <nav>
+            <div class="logo">PLET<span>ANIMATION</span></div>
             <ul>
-                <li><a href="index.html">Introduction</a></li>
-                <li><a href="animation.html">Animations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="animation.html">WORKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="introduction">
-        <div class="intro-container">
-            <div class="intro-photo">
-                <img src="./assets/plet pp 2025.png" alt="Photo Plet">
-            </div>
-            <div class="intro-text">
-                <h2>Introduction</h2>
-                <p>
-                    <img src="https://flagcdn.com/w40/fr.png" alt="French Flag" class="flag-icon"> 
-                    Bonjour, je m'appelle Eddy Tougon, alias <strong>Plet</strong>. Je suis un jeune animateur 2D freelance passionné par la fiction et l'art.
-                    Cela fait plusieurs années que j'apprends l'animation afin de devenir le meilleur animateur possible.
-                </p>
+    <main>
+        <section id="hero">
+            <div class="hero-inner">
+                <div class="hero-info">
+                    <span class="tag">Available for work </span>
+                    <h1>Eddy Tougon</h1>
+                    <h2 class="role">2D ANIMATOR </h2>
+                    
+                    <div class="bio-container">
+    <div class="bio-block">
+        <p>
+            <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="bio-flag">
+            <strong>  </strong> Bonjour, je m'appelle Eddy Tougon, alias <strong>Plet</strong>. 
+            Je suis un jeune animateur 2D freelance passionné par la fiction et l'art. 
+            Cela fait plusieurs années que j'apprends l'animation afin de devenir le meilleur animateur possible.
+        </p>
+    </div>
+    
+    <div class="bio-block en">
+        <p>
+            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="bio-flag">
+            <strong>  </strong> Hello, I'm Eddy Tougon, also known as <strong>Plet</strong>. 
+            I'm a young freelance 2D animator passionate about fiction and art. 
+            I've been learning animation for several years, striving to become the best animator I can be.
+        </p>
+    </div>
+</div>
 
-                <p>
-                    <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="flag-icon"> 
-                    Hello, my name is Eddy Tougon, also known as <strong>Plet</strong>. I'm a young freelance 2D animator with a passion for fiction and art.
-                    I've been learning animation for several years now with the goal of becoming the best animator I can be.
-                </p>
+                    <div class="hero-cta">
+                        <a href="#demo-reel" class="btn-main">WATCH REEL</a>
+                        <a href="animation.html" class="btn-outline">VIEW WORKS</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="./assets/plet pp 2025.png" alt="Plet Profile" class="profile-frame">
+                </div>
             </div>
-        </div>
-        
-        <div class="about-container">
-            <h2>About Me</h2>
-            <p><img src="https://flagcdn.com/w40/fr.png" alt="French Flag" class="flag-icon"> 
-                Je suis devenu animateur pour réaliser un rêve d’enfance : donner vie à des histoires avec le dessin. 
-                Cela fait maintenant trois ans que je développe mes compétences pour devenir meilleur chaque jour.</p>
-            <p><img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="flag-icon">
-                I became an animator to fulfill a childhood dream: bringing stories to life through drawing. 
-                It’s been three years now since I started training, constantly striving to become better every day.</p>
-        </div>
-    </section>
+        </section>
 
-    <section id="demo-reel">
-        <h2>Demo Reel</h2>
-        <div class="video-wrapper">
-            <iframe 
-                src="https://www.youtube.com/embed/AMP2rt7E9RM" 
-                title="Plet Animation Demo Reel" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
-        </div>
-    </section>
+        <section id="demo-reel">
+            <div class="container-giant">
+                <div class="section-title">
+                    <h3>DEMO REEL 2025</h3>
+                </div>
+                <div class="video-container-giant">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/AMP2rt7E9RM" 
+                            title="Plet Animation Demo Reel"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="software">
-        <h2>Logiciels / Softwares</h2>
-        <div class="software-container">
-            <div class="software-item">
-                <img src="./assets/logos/clip-studio-paint.jpg" alt="Clip Studio Paint Logo">
-                <p>Clip Studio Paint</p>
+        <section id="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Software</h3>
+                    <span class="jp-title"></span>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="./assets/logos/clip-studio-paint.jpg" alt="CSP">
+                        <h4>Clip Studio</h4>
+                    </div>
+                    <div class="skill-card">
+                        <img src="./assets/logos/opentoonz.png" alt="OpenToonz">
+                        <h4>OpenToonz</h4>
+                    </div>
+                    <div class="skill-card">
+                        <img src="./assets/logos/krita.png" alt="Krita">
+                        <h4>Krita</h4>
+                    </div>
+                </div>
             </div>
-            <div class="software-item">
-                <img src="./assets/logos/krita.png" alt="Krita Logo">
-                <p>Krita</p>
-            </div>
-            <div class="software-item">
-                <img src="./assets/logos/opentoonz.png" alt="OpenToonz Logo">
-                <p>OpenToonz</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <div class="footer-container">
-            <a href="mailto:eddytougon@gmail.com?subject=Contact%20from%20Portfolio" class="contact-button">
-                <i class="fas fa-envelope"></i> Send an Email
-            </a>
-            <div class="social-links">
+        <div class="footer-wrap">
+            <p>&copy; 2025 PLET ANIMATION. ALL RIGHTS RESERVED.</p>
+            <div class="socials">
                 <a href="https://www.youtube.com/@plet_animation" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/@plet_animation" target="_blank"><i class="fab fa-tiktok"></i></a>
                 <a href="https://x.com/pletx2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@plet_animation" target="_blank"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
-        <p>&copy; 2025 Plet Animator Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>

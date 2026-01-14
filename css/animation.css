@@ -1,0 +1,281 @@
+/* ==========================================================================
+   VARIABLES & RESET
+   ========================================================================== */
+:root {
+    --neon-blue: #00d4ff;
+    --dark-bg: #050505;
+    --card-gray: #111;
+    --text-gray: #a0a0a0;
+    --white: #ffffff;
+    --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+body.japanime-style {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   TITRES DE SECTION (Style Studio)
+   ========================================================================== */
+.section-title {
+    margin-bottom: 40px;
+    border-left: 4px solid var(--neon-blue);
+    padding-left: 20px;
+}
+
+.section-title h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.jp-title {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--neon-blue);
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   GALERIE SAKUGA (GIFs)
+   ========================================================================== */
+#sakuga-gallery {
+    padding: 120px 5% 60px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gif-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.gif-item {
+    position: relative;
+    background: #000;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+}
+
+.gif-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.5s ease;
+}
+
+.gif-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    color: var(--neon-blue);
+    font-size: 0.75rem;
+    font-weight: bold;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gif-item:hover {
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+.gif-item:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.gif-item:hover .gif-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   FLIPBOOKS (Production Material)
+   ========================================================================== */
+#flipbooks {
+    padding: 60px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.production-card {
+    background: var(--card-gray);
+    margin-bottom: 100px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.production-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* --- LE CARROUSEL AVEC FLÈCHES EXTÉRIEURES --- */
+.carousel-external-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #000;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #1a1a1a;
+}
+
+.carousel-viewport {
+    flex: 1;
+    height: 75vh; /* Hauteur maximale pour bien voir les détails */
+    background: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 50px rgba(0,0,0,1);
+}
+
+.carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* L'IMAGE ENTIÈRE EST TOUJOURS VISIBLE */
+    display: none;
+    image-rendering: auto;
+}
+
+/* Animation lors du changement d'image */
+.carousel img[style*="display: block"] {
+    display: block !important;
+    animation: productionSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes productionSlide {
+    0% { opacity: 0; transform: scale(0.98); filter: brightness(1.5); }
+    100% { opacity: 1; transform: scale(1); filter: brightness(1); }
+}
+
+/* Flèches Extérieures */
+.carousel-arrow.outside {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    color: var(--neon-blue);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.carousel-arrow.outside:hover {
+    background: var(--neon-blue);
+    color: #000;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.5);
+    transform: scale(1.1);
+}
+
+/* --- BOUTONS TÉLÉCHARGEMENT --- */
+.download-area {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-download {
+    text-decoration: none;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 24px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-download.primary {
+    border-color: var(--neon-blue);
+    color: var(--neon-blue);
+}
+
+.btn-download:hover {
+    background: var(--neon-blue);
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   MODAL (Plein écran GIF)
+   ========================================================================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border: 1px solid var(--neon-blue);
+    box-shadow: 0 0 50px rgba(0, 212, 255, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 30px; right: 40px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .carousel-external-wrapper {
+        flex-direction: column;
+    }
+    
+    .carousel-viewport {
+        height: 50vh;
+        width: 100%;
+    }
+    
+    .carousel-arrow.outside {
+        width: 100%;
+        height: 55px;
+        border-radius: 8px;
+    }
+
+    .carousel-arrow.outside.left-arrow { order: 2; }
+    .carousel-arrow.outside.right-arrow { order: 3; }
+}
